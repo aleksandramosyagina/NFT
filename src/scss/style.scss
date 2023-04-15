@@ -1,3 +1,66 @@
-body{
-    background-color: #000;
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.main__opportunity {
+    background-color: #1D2532;
+}
+
+.main__opportunity_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 40px;
+}
+
+.main__opportunity_row {
+    max-width: 1280px;
+    // height: 710px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 185px;
+}
+
+.main__opportunity_body {
+    flex: 0 1 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 82px;
+    color: #ffffff;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 331px;
+        height: 66px;
+        background: linear-gradient(30deg, #1DD844, #CBF62E);
+        border-radius: 20px;
+        border: #CBF62E;
+        box-shadow: 0 0 5px 3px rgba(203, 246, 46, 0.5);
+        color: #242424;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+.main__opportunity_title {
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.main__opportunity_image {
+    flex: 0 1 61%;
+    display: flex;
+    justify-content: flex-end;
+
+    & > img {
+        height: 708px;
+    }
+}
+
+.main__opportunity_text {
+font-size: 23px;
 }
