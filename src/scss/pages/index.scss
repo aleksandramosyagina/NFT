@@ -1,0 +1,157 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.main__opportunity {
+    background-color: #1D2532;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 40px;
+}
+
+.main__opportunity_row {
+    max-width: 1280px;
+    // height: 710px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 185px;
+}
+
+.main__opportunity_body {
+    flex: 0 1 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 82px;
+    color: #ffffff;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 331px;
+        height: 66px;
+        background: linear-gradient(30deg, #1DD844, #CBF62E);
+        border-radius: 20px;
+        border: #CBF62E;
+        box-shadow: 0 0 5px 3px rgba(203, 246, 46, 0.5);
+        color: #242424;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+        margin-top: 60px;
+    }
+}
+
+.main__opportunity_title {
+    font-size: 3.9em;
+    font-weight: normal;
+}
+
+.main__opportunity_image {
+    flex: 0 1 43%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    & > img {
+        height: 708px;
+    }
+}
+
+.main__opportunity_decoration {
+    position: absolute;
+    left: -5%;
+    bottom: 30%;
+}
+
+.main__opportunity_decoration-circle {
+    width: 87px;
+    height: 87px;
+    // border-radius: 50%;
+    // background: linear-gradient(to bottom right, #90f92c, #00D448);
+    // border-width: 1px;
+    // border-style: solid;
+    // border-image: linear-gradient(to right, #853DF2 55%, #E2C1FF 53%);
+    position: absolute;
+    left: -5%;
+    bottom: 30%;
+    background: linear-gradient( #90f92c,#00D448) padding-box,
+    linear-gradient(to right, #853DF2,  #E2C1FF) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+
+}
+
+.main__opportunity_text {
+font-size: 23px;
+}
+
+.main__education {
+    background-color: #ffffff;
+    min-height: 1188px;
+}
+
+.main__education_title {
+    font-size: 3em;
+}
+
+.main__education_container {
+    background: linear-gradient(212.69deg, #323E51, #1D2532);
+    min-height: 1093px;
+    max-width: 1284px;
+    border-radius: 20px;
+    margin: 220px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__education_cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 650px;
+}
+
+.main__education_card {
+    background-color: #333E51;
+    border-radius: 20px;
+    width: 300px;
+    height: 330px;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__education_card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 262px;
+}
+.main__education_card_img {
+    width: 117px;
+    height: 117px;
+    margin: 15px auto;
+}
+
+.main__education_card_image {
+    max-width: 100%;
+    height: auto;
+}
+.main__education_card_text {
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.4em;
+}
