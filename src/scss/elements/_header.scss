@@ -15,12 +15,14 @@
 
 .header__logo {
 
+    z-index: 1;
+
     a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
-    color: #fff;
+    color: $color-light-xl;
     }
 }
 
@@ -40,12 +42,12 @@
 }
 
 .nav__menu {
-    color: #fff;
+    color: $color-light-xl;
     text-decoration: none;
 }
 
 .nav__menu_button {
-    border: 1px solid #fff;
+    border: 1px solid $color-light-xl;
     width: 175px;
     height: 51px;
     border-radius: 15px;
