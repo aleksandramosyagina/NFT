@@ -24,15 +24,30 @@
                             <p class="header__logo_subtitle">NFT</p>
                         </a>
                     </div>
-                    <nav class="nav"></nav>
+                    <nav class="nav">
                     <div class="nav__menu_container">
                         <a class="nav__menu" href="#main">Главная</a>
-                        <a class="nav__menu" href="#education">Что даст тебе обучение</a>
+                        <a class="nav__menu" href="#education">Что даст обучение</a>
                         <a class="nav__menu nav__menu_button">Личный кабинет</a>
                     </div>
                     <div class="nav__hamburger">
                         <span class="nav__hamburger_line"></span>
                     </div>
+                    </nav>
+                    <nav class="nav__menu-mobile">
+                        <div class="nav__menu-mobile_list-container">
+                    <ul class="nav__menu-mobile_list">
+                        <li class="nav__menu-mobile_item">
+                            <a class="nav__menu-mobile_item-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__menu-mobile_item">
+                            <a class="nav__menu-mobile_item-link" href="#education">Что даст обучение</a>
+                        </li>
+                        <li class="nav__menu-mobile_item">
+                            <a class="nav__menu nav__menu_button nav__menu-mobile_button">Личный кабинет</a>
+                        </li>
+                    </ul> 
+                </div>   
                     </nav>
                 </div>
             </div>
@@ -52,7 +67,7 @@
                             <div class="main__opportunity_text">
                                 Получи все нужные навыки для заработка <br> на NFT всего за 28 дней!
                             </div>
-                            <a href="#pets" class="main__opportunity_button">Начать зарабатывать на NFT</a>
+                            <a href="#popup" id="popup-button" class="main__opportunity_button popup-link">Начать зарабатывать на NFT</a>
                         </div>
                         <div class="main__opportunity_image">
                             <img src="/src/img/man.png" alt="man">
@@ -71,8 +86,8 @@
 
 
             </section>
-            <section class="main__section main__education" id="education">
-                <div class="main__education_container">
+            <section class="main__section main__education">
+                <div class="main__education_container" id="education">
                     <h2 class="main__education_title">Что даст тебе обучение?</h2>
                     <div class="main__education_cards-container">
                         <div class="main__education_card">
@@ -120,6 +135,20 @@
 
         </main>
     </div>
+<div id="popup" class="popup">
+<div class="popup__body">
+    <div class="popup__content">
+
+        <a href="" class="popup__close close-popup"><img src="/src/img/cross.png" alt="cross"></a>
+        <div class="popup__title">Начни прямо сейчас!</div>
+        <div class="popup__text">Получи все нужные навыки для заработка на NFT всего за 28 дней!</div>
+    </div>
+</div>
+
+</div>
+
+
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="index.js"></script>
 </body>
 
