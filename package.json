@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -36,6 +37,7 @@
     "webpack": "^5.82.0",
     "webpack-stream": "^7.0.0"
   },
+  "homepage": "https://aleksandramosyagina.github.io/NFT",
   "dependencies": {
     "del": "^6.1.1"
   }
