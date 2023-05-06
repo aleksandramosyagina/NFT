@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    $('.nav__hamburger').click(function (event) {
-        $('.nav__hamburger, .nav__menu-mobile, .nav__hamburger_line').toggleClass('active');
+    $('.nav-hamburger').click(function (event) {
+        $('.nav-hamburger, .nav-mobile, .nav-hamburger__line').toggleClass('active');
         $('body').toggleClass('lock');
     });
 });
-$('.nav__menu-mobile_item-link').click(function () {
-    $('.nav__hamburger, .nav__menu-mobile, .nav__hamburger_line').removeClass('active');
+$('.nav-menu-list__item_link').click(function () {
+    $('.nav-hamburger, .nav-mobile, .nav-hamburger__line').removeClass('active');
     $('body.lock').removeClass('lock');
 });
 
@@ -20,8 +20,27 @@ $(document).click(function (e) {
     if ($(e.target).is('.popup')) {
         closeModal();
     }
-})
+});
 
 function closeModal() {
     $('.popup.active').removeClass('active');
-}
+};
+
+const buttonPay = document.getElementById("pay-button");
+
+$('#form_id input[type=email]').on('blur', function () {
+    let email = $(this).val();
+
+    if (email.match(/.+?\@.+/g).length > 0) {
+        console.log('valid');
+        $('.popup__button').addClass('active');
+
+        buttonPay.onclick = function () {
+            $('.popup-tnks').addClass('active');
+            $('.popup.active').removeClass('active');
+            $('body').addClass('lock');
+        };
+    } else {
+        console.log('invalid');
+    }
+});
